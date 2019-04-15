@@ -11,6 +11,6 @@ with open("wordlist/wordlist.txt", "r") as wl:
 			
 			digest = md5(line).hexdigest()
 				
-			wl_md5.write("{} {}\n".format(digest, line))
+			wl_md5.write("{} {}\n".format(digest, line)) # store password and hash
 			
 			line = wl.readline().strip()
